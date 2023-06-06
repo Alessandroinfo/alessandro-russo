@@ -1,0 +1,38 @@
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+
+.diagonal-wrapper {
+  max-width: 100%;
+}
+
+.diagonal-top {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 100vw 0 0;
+  border-color: transparent #fff transparent transparent;
+
+  &.border-color-diagonal-primary {
+    border-color: transparent $primary transparent transparent;
+  }
+}
+
+// Containers
+.work-card {
+  min-height: 33rem;
+}
+
+.diagonal-cut-background {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.diagonal-cut-bottom {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}

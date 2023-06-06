@@ -1,0 +1,6 @@
+.background {
+  .shade {
+    background: $shade1;
+    background: linear-gradient(90deg, $shade1 30%, $shade2 70%, $shade3 100%);
+  }
+}
