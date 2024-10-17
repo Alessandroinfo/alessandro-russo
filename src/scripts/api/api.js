@@ -1,40 +1,38 @@
 import axios from 'axios';
 
-// Headers
-const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'content-type': 'application/json',
-    'Authorization': 'Token {55600df061a314e8837b6483f18af5b4a786cd37}',
+// Configurazione delle opzioni per la chiamata API
+const options = {
+    method: 'GET',
+    url: 'https://famous-quotes4.p.rapidapi.com/random',
+    params: {
+        category: 'inspirational',   // Puoi cambiare la categoria qui
+        count: '1'         // Numero di citazioni da ottenere
+    },
+    headers: {
+        'x-rapidapi-key': '2caa9d5b8fmshadd9e729c270d4fp13d674jsn90e8d548f3a4',
+        'x-rapidapi-host': 'famous-quotes4.p.rapidapi.com'
+    }
 };
 
-// default conf for axios
-const API = axios.create({
-    // baseURL: 'https://api.paperquotes.com/apiv1/',
-    baseURL: 'https://quotes.rest/',
-    // headers: headers
-});
-
-
-// Endpoints
-// const RANDOM_QUOTE = 'quotes';
-const RANDOM_QUOTE = 'qod.json?category=inspire';
-
-// Exporting services
+// Funzione per ottenere citazioni casuali
 export const apiService = {
     getRandomQuote
 };
 
-// Handle the auth
+// Chiamata API per ottenere citazioni casuali
 function getRandomQuote() {
-    const payload = {
-        maxlength: '100',
-        minlength: '0',
-        limit: 1
-    };
-
-    // return API.get(RANDOM_QUOTE, {params: payload})
-    return API.get(RANDOM_QUOTE)
+    return axios.request(options)
         .then(res => {
-            return res;
+            // Estrai e formatta la risposta delle citazioni
+            const quotes = res.data.map(quote => ({
+                author: quote.author,
+                category: quote.category,
+                text: quote.text
+            }));
+            return quotes;
+        })
+        .catch(error => {
+            console.error('Errore nella richiesta delle citazioni:', error);
+            throw error;
         });
 }

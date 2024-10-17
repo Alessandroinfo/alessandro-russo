@@ -14,10 +14,8 @@ class Quote extends React.Component {
         const quotePromise = apiService.getRandomQuote();
         quotePromise.then(res => {
             this.setState({
-                // quoteText: res.data.results[0].content,
-                // quoteAuthor: res.data.results[0].author
-                quoteText: res.data.contents.quotes[0].quote,
-                quoteAuthor: res.data.contents.quotes[0].author
+                quoteText: res[0].text,
+                quoteAuthor: res[0].author
             });
         }).catch(function (err) {
             console.error(err);
