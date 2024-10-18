@@ -5,7 +5,6 @@ const WriteFilePlugin = require('write-file-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -62,11 +61,14 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new WriteFilePlugin(),
-        new CopyPlugin([ {
-                from: 'src/conf/particle.json',
-                to: 'assets/'
-            }
-        ]),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src', 'robots.txt'),
+                    to: path.resolve(__dirname, 'dist', 'robots.txt')
+                }
+            ]
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html'
@@ -84,9 +86,6 @@ module.exports = {
             },
             fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
             include: 'allAssets'
-        }),
-        new ScriptExtHtmlWebpackPlugin({
-            defaultAttribute: 'defer'
         })
     ],
     externals: {
