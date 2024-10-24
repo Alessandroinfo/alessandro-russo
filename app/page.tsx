@@ -118,7 +118,7 @@ export default function Home() {
             <div className="z-10 text-white min-h-screen pt-24 box-border pb-42 flex flex-col justify-center">
                 <div className="flex flex-col mt-auto justify-center h-full">
                     <div className="px-16 flex text-xs flex-col lg:pl-40 lg:block">
-                        <h1 className="font-hairline leading-none">
+                        <h1 className="font-thin leading-none">
                             Alessandro Russo
                             <br/>
                             <span className="text-teal-400">Front-End Architect</span>
@@ -126,7 +126,7 @@ export default function Home() {
                             <span className="text-teal-400">Full-Stack developer</span>
                             <br/>
                         </h1>
-                        <h2 className="mt-8 font-hairline leading-none">
+                        <h2 className="mt-8 font-thin leading-none">
                             Source of <span className="text-teal-400">inspiration</span>
                             and <span className="text-teal-400">motivation</span>.
                         </h2>

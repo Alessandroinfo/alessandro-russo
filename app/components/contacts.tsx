@@ -70,7 +70,7 @@ const Contacts = () => {
             </div>
 
             <div className="p-4 bottom-0 flex justify-center bg-primary text-white">
-                <div className="font-hairline">© {currentYear} - Alessandro Russo</div>
+                <div className="font-thin">© {currentYear} - Alessandro Russo</div>
             </div>
         </div>
     );
