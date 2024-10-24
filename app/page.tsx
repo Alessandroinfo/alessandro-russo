@@ -23,8 +23,8 @@ export default function Home() {
                       <svg className="h-10 w-10" id="Livello_1" version="1.1" viewBox="0 0 24 24"
                            x="0px" xmlns="http://www.w3.org/2000/svg"
                            y="0px">
-                          <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                    <g fill="#FFFFFF" fill-rule="nonzero" transform="translate(-90.000000, -70.000000)">
+                          <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+                                    <g fill="#FFFFFF" fillRule="nonzero" transform="translate(-90.000000, -70.000000)">
                                         <g transform="translate(90.000000, 70.000000)">
             <path className="st0" d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
             	C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22c0.7,0.7,1.3,1.1,2.1,1.4
@@ -48,8 +48,8 @@ export default function Home() {
 
                  xmlns="http://www.w3.org/2000/svg"
             >
-            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                    <g fill="#FFFFFF" fill-rule="nonzero" transform="translate(-90.000000, -70.000000)">
+            <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+                                    <g fill="#FFFFFF" fillRule="nonzero" transform="translate(-90.000000, -70.000000)">
                                         <g transform="translate(90.000000, 70.000000)">
             <path d="M24,12c0-6.6-5.4-12-12-12C5.4,0,0,5.4,0,12c0,6,4.4,11,10.1,11.9v-8.4h-3V12h3V9.4c0-3,1.8-4.7,4.5-4.7
             	c1.3,0,2.7,0.2,2.7,0.2v3h-1.5c-1.5,0-2,0.9-2,1.9V12h3.3l-0.5,3.5h-2.8v8.4C19.6,23,24,18,24,12z"/>
@@ -63,8 +63,8 @@ export default function Home() {
 
                  xmlns="http://www.w3.org/2000/svg"
             >
-            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                    <g fill="#FFFFFF" fill-rule="nonzero" transform="translate(-90.000000, -70.000000)">
+            <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+                                    <g fill="#FFFFFF" fillRule="nonzero" transform="translate(-90.000000, -70.000000)">
                                         <g transform="translate(90.000000, 70.000000)">
             <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2
             	c-3.3,0.7-4-1.6-4-1.6c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1
@@ -83,8 +83,8 @@ export default function Home() {
 
                  xmlns="http://www.w3.org/2000/svg"
             >
-            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                    <g fill="#FFFFFF" fill-rule="nonzero" transform="translate(-90.000000, -70.000000)">
+            <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+                                    <g fill="#FFFFFF" fillRule="nonzero" transform="translate(-90.000000, -70.000000)">
                                         <g transform="translate(90.000000, 70.000000)">
             <path className="st0" d="M19,21.9v-6.4h2.1V24H1.8v-8.5H4v6.4H19z M6.1,19.7h10.7v-2.1H6.1C6.1,17.6,6.1,19.7,6.1,19.7z M6.4,14.9
             	l10.5,2.2l0.5-2.1L6.8,12.8C6.8,12.8,6.4,14.9,6.4,14.9z M7.7,9.8l9.7,4.5l0.9-1.9L8.6,7.9L7.7,9.8C7.7,9.8,7.7,9.8,7.7,9.8z
@@ -100,8 +100,8 @@ export default function Home() {
 
                  xmlns="http://www.w3.org/2000/svg"
             >
-            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                    <g fill="#FFFFFF" fill-rule="nonzero" transform="translate(-90.000000, -70.000000)">
+            <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+                                    <g fill="#FFFFFF" fillRule="nonzero" transform="translate(-90.000000, -70.000000)">
                                         <g transform="translate(90.000000, 70.000000)">
             <path d="M20.4,20.5h-3.6v-5.6c0-1.3,0-3-1.9-3s-2.1,1.4-2.1,2.9v5.7H9.4V9h3.4v1.6l0,0c0.5-0.9,1.6-1.9,3.4-1.9
             	c3.6,0,4.3,2.4,4.3,5.5L20.4,20.5L20.4,20.5z M5.3,7.4c-1.1,0-2.1-0.9-2.1-2.1c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1

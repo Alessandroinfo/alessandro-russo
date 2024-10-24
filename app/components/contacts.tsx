@@ -7,7 +7,7 @@ const Contacts = () => {
         <div>
             <div className="flex justify-center items-center text-white bg-primary pt-40 pb-20 font-thin">
                 <div
-                    className="flex flex-wrap flex-col w-full pl-10 items-start md:flex-row md:items-center *:leading-snug *:items-center *:justify-center *:inline-flex *:my-3 md:*:my-4 md:*:w-2/4 xl:*:w-auto xl:*:mx-10">
+                    className="flex flex-wrap flex-col pl-10 items-start md:flex-row md:items-center *:leading-snug *:items-center *:justify-center *:inline-flex *:my-3 md:*:my-4 md:*:w-2/4 xl:*:w-auto xl:*:mx-10">
                     <div>
                         <div className="mr-5">
                             <svg className="h-8 w-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
