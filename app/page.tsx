@@ -127,8 +127,14 @@ export default function Home() {
                             <br/>
                         </h1>
                         <h2 className="mt-8 font-thin leading-none">
-                            Source of <span className="text-teal-400">inspiration</span>
-                            and <span className="text-teal-400">motivation</span>.
+                            Source of <span className="text-teal-400">inspiration</span> and <span
+                            className="text-teal-400">motivation</span>. Updated to the latest Web Technologies.
+                            <br/>
+                            <span className="text-teal-400">10+ years</span> of IT experience with code, projects,
+                            and <span className="text-teal-400">big companies</span>.
+                            <br/>
+                            Founder of <span className="text-teal-400">Codevision</span>, for creating things for the
+                            internet.
                         </h2>
                     </div>
                 </div>
