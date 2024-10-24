@@ -13,65 +13,83 @@ const ParticlesBackground = () => {
             id="particles-js"
             options={
                 {
-                    fpsLimit: 60,
-                    background: {
-                        color: "#032428"
-                    },
-                    interactivity: {
-                        events: {
-                            onClick: {enable: true, mode: "push"},
-                            onHover: {
-                                enable: true,
-                                mode: "repulse",
-                                parallax: {enable: false, force: 60, smooth: 10}
-                            },
-                            resize: {delay: 100, enable: true}
-                        },
-                        modes: {
-                            push: {quantity: 4},
-                            repulse: {distance: 200, duration: 0.4}
+                    "background": {
+                        "color": {
+                            "value": "#032428"  // Dark teal background
                         }
                     },
-                    particles: {
-                        color: {value: "#2dd4bf"},
-                        move: {
-                            direction: "none",
-                            enable: true,
-                            outModes: "out",
-                            random: false,
-                            speed: 2,
-                            straight: false
-                        },
-                        number: {
-                            density: {
-                                enable: true,
-                                height: 800,
-                                width: 800
+                    "particles": {
+                        "number": {
+                            "value": 800,  // High density for a rich visual effect
+                            "density": {
+                                "enable": true,
+                                "area": 1000  // Ensures densely packed particles
                             }
                         },
-                        value: 80
-                    },
-                    opacity: {
-                        animation: {
-                            enable: true,
-                            speed: 0.05,
-                            sync: true,
-                            startValue: "max",
-                            count: 1,
-                            destroy: "min"
+                        "color": {
+                            "value": "#2dd4bf"  // Light teal particle color for contrast
                         },
-                        value: {
-                            min: 0,
-                            max: 0.5
+                        "shape": {
+                            "type": "circle"
+                        },
+                        "opacity": {
+                            "value": 0.05,  // Starts almost invisible for the fade-in effect
+                            "random": false,
+                            "animation": {
+                                "enable": true,
+                                "speed": 0.8,  // Slow speed for gradual fade-in
+                                "minimumValue": 0.01,  // Minimum opacity to prevent full disappearance
+                                "sync": false  // Particles will fade in independently
+                            }
+                        },
+                        "size": {
+                            "value": 1.5,  // Medium particle size
+                            "random": {
+                                "enable": true,
+                                "minimumValue": 0.6
+                            },
+                            "animation": {
+                                "enable": true,
+                                "speed": 3,  // Smooth animation of size change
+                                "minimumValue": 0.4,
+                                "sync": false
+                            }
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 0.15,  // Slow particle movement for a calm effect
+                            "direction": "right",  // Wind-like direction
+                            "random": true,
+                            "straight": false,
+                            "outModes": {
+                                "default": "out"
+                            }
                         }
                     },
-                    shape: {
-                        type: "circle"
+                    "interactivity": {
+                        "events": {
+                            "onHover": {
+                                "enable": true,
+                                "mode": "bubble"  // Subtle hover effect
+                            },
+                            "onClick": {
+                                "enable": false
+                            }
+                        },
+                        "modes": {
+                            "bubble": {
+                                "distance": 100,  // Close hover triggers bubble effect
+                                "size": 2.2,  // Slight enlargement on hover
+                                "duration": 1.5,
+                                "opacity": 0.2,  // Soft glow on hover
+                                "speed": 1.2
+                            }
+                        }
                     },
-                    size: {
-                        value: {min: .2, max: 1.2}
-                    }
+                    "retina_detect": true
                 }
+
+
             }
         />
     );
