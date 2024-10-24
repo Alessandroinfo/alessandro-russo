@@ -1,0 +1,17 @@
+@import "styles/setup/normalize";
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+@import "styles/global/typography";
+@import "styles/global/dev";
+@import "styles/global/global";
+@import "styles/layout/background";
+@import "styles/layout/container";
+@import "styles/vendor/particles";
+@import "styles/vendor/vanilla_toast";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+

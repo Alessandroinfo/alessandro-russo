@@ -11,8 +11,8 @@
   font-style: normal;
   font-weight: 100;
   src: local('Roboto Thin'), local('Roboto-Thin'),
-  url('fonts/roboto-v20-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
-  url('fonts/roboto-v20-latin-100.woff') format('woff'); /* Modern Browsers */
+  url('../../fonts/roboto-v20-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../../fonts/roboto-v20-latin-100.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -22,8 +22,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-  url('fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
+  url('../../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
