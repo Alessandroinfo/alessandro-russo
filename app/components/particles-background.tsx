@@ -35,24 +35,21 @@ const ParticlesBackground = () => {
                         },
                         "opacity": {
                             "value": 0.05,  // Starts almost invisible for the fade-in effect
-                            "random": false,
                             "animation": {
+
                                 "enable": true,
                                 "speed": 0.8,  // Slow speed for gradual fade-in
-                                "minimumValue": 0.01,  // Minimum opacity to prevent full disappearance
                                 "sync": false  // Particles will fade in independently
                             }
                         },
                         "size": {
-                            "value": 1.5,  // Medium particle size
-                            "random": {
-                                "enable": true,
-                                "minimumValue": 0.6
+                            "value": {
+                                "min": 0.4,  // Minimum size for subtle variations
+                                "max": 1.5   // Maximum size for particles
                             },
                             "animation": {
                                 "enable": true,
                                 "speed": 3,  // Smooth animation of size change
-                                "minimumValue": 0.4,
                                 "sync": false
                             }
                         },

@@ -3,7 +3,7 @@ import React from 'react';
 import Quote from '../app/components/quote';
 import EmailCopy from '@/app/components/email-copy';
 import Contacts from '@/app/components/contacts';
-import ParticlesBackground from '@/app/components/ParticlesBackground';
+import ParticlesBackground from '@/app/components/particles-background';
 
 export default function Home() {
     return (
