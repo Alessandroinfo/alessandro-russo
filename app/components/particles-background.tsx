@@ -23,7 +23,8 @@ const ParticlesBackground = () => {
                             "value": 800,  // High density for a rich visual effect
                             "density": {
                                 "enable": true,
-                                "area": 1000  // Ensures densely packed particles
+                                height:1000,
+                                width:1000
                             }
                         },
                         "color": {
@@ -88,8 +89,6 @@ const ParticlesBackground = () => {
                     },
                     "retina_detect": true
                 }
-
-
             }
         />
     );
