@@ -1,12 +1,10 @@
 import "./globals.scss";
-import Head from 'next/head';
 import React from 'react';
-import {Metadata} from 'next';
+import {Metadata, Viewport} from 'next';
 
 export const metadata: Metadata = {
     title: 'Alessandro Russo | Front-End Architect',
     description: 'Alessandro Russo | Web Architect',
-    viewport: 'width=device-width, initial-scale=1',
     openGraph: {
         title: 'Alessandro Russo | Web Architect',
         type: 'website',
@@ -23,8 +21,13 @@ export const metadata: Metadata = {
         card: 'summary',
         creator: '@Alessandro_Info',
     },
-    themeColor: '#032a2e',
 };
+
+export const viewport: Viewport = {
+    themeColor: '#032a2e',
+    initialScale: 1,
+    width: 'device-width',
+}
 
 export default function RootLayout({
     children,

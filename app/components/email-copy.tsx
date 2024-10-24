@@ -9,7 +9,7 @@ interface ToastProps {
 const Toast: React.FC<ToastProps> = ({message, onClose}) => {
     return (
         <div
-            className="fixed bottom-4 right-4 bg-teal-400 text-white px-4 py-2 rounded shadow-lg"
+            className="fixed bottom-4 right-4 bg-teal-950 text-white px-4 py-2 rounded shadow-lg"
             style={{zIndex: 1000}}
         >
             {message}

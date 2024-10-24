@@ -3,13 +3,14 @@ import React from 'react';
 import Quote from '../app/components/quote';
 import EmailCopy from '@/app/components/email-copy';
 import Contacts from '@/app/components/contacts';
+import ParticlesBackground from '@/app/components/ParticlesBackground';
 
 export default function Home() {
     return (
         <>
             <div className="w-full relative flex flex-col antialiased">
-            <div className="z-10 background top-0 absolute w-full h-full">
-                <div className="w-full h-full" id="particles-js"></div>
+            <div className="z-10 background bg-primary top-0 absolute w-full h-full">
+                <ParticlesBackground/>
             </div>
 
             <div

@@ -4,8 +4,8 @@ const Contacts = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div>
-            <div className="flex justify-center items-center text-white bg-primary pt-40 pb-20 font-thin">
+        <div className={"relative z-10 bg-primary"}>
+            <div className="flex justify-center items-center text-white pt-40 pb-20 font-thin">
                 <div
                     className="flex flex-wrap flex-col pl-10 items-start md:flex-row md:items-center *:leading-snug *:items-center *:justify-center *:inline-flex *:my-3 md:*:my-4 md:*:w-2/4 xl:*:w-auto xl:*:mx-10">
                     <div>
@@ -69,7 +69,7 @@ const Contacts = () => {
                 </div>
             </div>
 
-            <div className="p-4 bottom-0 flex justify-center bg-primary text-white">
+            <div className="p-4 bottom-0 flex justify-center text-white">
                 <div className="font-thin">© {currentYear} - Alessandro Russo</div>
             </div>
         </div>
