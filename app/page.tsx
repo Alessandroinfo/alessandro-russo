@@ -1,11 +1,13 @@
 'use client'
 import React from 'react';
 import Quote from '../app/components/quote';
-import EmailCopy from '@/app/components/EmailCopy';
+import EmailCopy from '@/app/components/email-copy';
+import Contacts from '@/app/components/contacts';
 
 export default function Home() {
     return (
-        <div className="w-full relative flex flex-col">
+        <>
+            <div className="w-full relative flex flex-col antialiased">
             <div className="z-10 background top-0 absolute w-full h-full">
                 <div className="w-full h-full" id="particles-js"></div>
             </div>
@@ -14,7 +16,7 @@ export default function Home() {
                 className="z-10 text-white flex lg:flex-row md:px-64 bg-teal-10 border-b border-teal-20 shadow-inner">
                 <div className="flex flex-grow">
                     <div
-                        className="flex items-center flex-grow md:flex-grow-0 justify-around sm:px-10 *:px-2 md:*:px-8 *:h-24 hover:*:bg-teal-900 *:flex *:items-center *:justify-center">
+                        className="flex items-center flex-grow md:flex-grow-0 justify-around sm:px-10 *:px-8 md:*:px-8 *:h-24 hover:*:bg-teal-900 *:flex *:items-center *:justify-center">
                         <EmailCopy/>
                         <a aria-label="Instagram" href="https://www.instagram.com/alerussohere/">
                     <span>
@@ -136,6 +138,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-
+            <Contacts/>
+        </>
     );
 }
